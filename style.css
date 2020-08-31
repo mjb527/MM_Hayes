@@ -1,0 +1,39 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+form {
+  margin: auto;
+  max-width: 75%;
+}
+
+form input, form select, form div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+form div, form button {
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+}
+
+.bg-blue {
+  background-color: blue;
+  color: white;
+}
+
+nav div {
+  padding: 1%;
+}
+
+nav {
+  margin-bottom: 2%;
+}

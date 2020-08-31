@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MM Hayes Quiz</title>
+    <link rel="stylesheet" href="./style.css"></link>
+  </head>
+  <body>
+
+    <nav>
+      <div class="bg-blue">
+        <strong>Employee Form</strong>
+      </div>
+    </nav>
+
+    <form>
+
+      <input type="text" name="employee_name" id="name" placeholder="Employee Name">
+      <input type="text" name="employee_number" id="id" placeholder="Employee Number">
+      <input type="tel" name="phone" id="tel" placeholder="Telephone Number">
+      <input type="text" name="address" id="address" placeholder="Address">
+      <input type="text" name="city" id="city" placeholder="City">
+
+      <select id="states" name="states">
+        <option value="">US State/Territory</option>
+      </select>
+
+      <input type="text" name="zip" id="zip" placeholder="Zip Code">
+      <div>
+        <h5 class="inline">Current Employee?</h5>
+        <label>
+          <input class="inline checkbox" type="checkbox" value="true" checked="true"/>Yes
+        </label>
+        <label>
+          <input class="inline checkbox" type="checkbox" value="false" />No
+        </label>
+      </div>
+      <div>
+        <button type="button" name="button">Submit</button>
+      </div>
+
+    </form>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- js mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="index.js"></script>
+
+  </body>
+
+
+</html>
