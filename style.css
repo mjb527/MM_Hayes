@@ -16,7 +16,7 @@ form img {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 2%;
   margin-top: 15px;
 }
 form div {
@@ -45,13 +45,20 @@ form div, form, form button {
 }
 
 form button {
-  background-color: #ef3e35;
   border: none;
   border-radius: 5px;
   color: white;
   padding: 15px 32px;
   text-decoration: none;
   font-size: 16px;
+}
+
+#submit {
+  background-color: #ef3e35;
+}
+
+#cancel {
+  background-color: #cccccc;
 }
 
 .inline {

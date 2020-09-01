@@ -17,12 +17,19 @@ $(document).ready( () => {
   });
 
   // submit form
-  $('button').click( e => {
+  $('#submit').click( e => {
     e.preventDefault();
     // if validated, make request
     if(validate()) request();
     else return;
 
+  });
+
+  // clear out all input fields when cancel button is clicked
+  $('#cancel').click( e => {
+    e.preventDefault();
+    $('input').each( (index, input) => input.value = "" );
+    $('select option[value=""]').prop('selected', true);
   });
 
 });
