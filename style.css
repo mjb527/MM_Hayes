@@ -1,8 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Allerta', sans-serif;
 }
 
 form {
@@ -10,24 +12,55 @@ form {
   max-width: 75%;
 }
 
-form input, form select, form div {
+form img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+form div {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2%;
+  color: #231f20;
 }
 
-form div, form button {
+
+form input[type="text"], form input[type="tel"], form select {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  width: 70%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form div, form, form button {
   text-align: center;
+}
+
+form button {
+  background-color: #ef3e35;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .inline {
   display: inline;
 }
 
-.bg-blue {
-  background-color: blue;
-  color: white;
+.bg {
+  background-color: #231f20;
+  color: #ef3e35;
 }
 
 nav div {
@@ -36,4 +69,10 @@ nav div {
 
 nav {
   margin-bottom: 2%;
+}
+
+nav .right {
+  position: absolute;
+  right: 1%;
+  left: auto;
 }
