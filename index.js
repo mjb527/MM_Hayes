@@ -20,7 +20,10 @@ $(document).ready( () => {
   $('#submit').click( e => {
     e.preventDefault();
     // if validated, make request
-    if(validate()) request();
+    if(validate()) {
+      request();
+      clearInputs();
+    }
     else return;
 
   });
@@ -28,11 +31,15 @@ $(document).ready( () => {
   // clear out all input fields when cancel button is clicked
   $('#cancel').click( e => {
     e.preventDefault();
-    $('input').each( (index, input) => input.value = "" );
-    $('select option[value=""]').prop('selected', true);
+    clearInputs();
   });
 
 });
+
+const clearInputs = () => {
+  $('input').each( (index, input) => input.value = "" );
+  $('select option[value=""]').prop('selected', true);
+}
 
 const request = () => {
 
